@@ -44,7 +44,7 @@ st.set_page_config(
 # TITLE
 # ==========================================================
 
-st.title("🔥 SafeFlame")
+st.title("HP Save Gas Mission")
 st.subheader("LPG Safety Intelligence Platform")
 
 st.markdown(
