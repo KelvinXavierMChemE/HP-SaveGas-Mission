@@ -102,6 +102,37 @@ if uploaded_file is not None:
     # ------------------------------------
 
     df = pd.read_excel(uploaded_file)
+    # Rename Microsoft Forms columns to match the app
+
+    df.rename(columns={
+
+    "Location": "District",
+
+    "Approximate age of LPG stove?": "Stove Age",
+
+    "Number of burners?": "Burners",
+
+    "Age of LPG hose?": "Hose Age",
+
+    "Last service by authorized technician?": "Last Service",
+
+    "Is the regulator damaged?": "Regulator Condition",
+
+    "Have you ever noticed gas smell?": "Gas Smell",
+
+    "Do you perform soap-water leak test?": "Soap Test",
+
+    "Do you close regulator after cooking?": "Close Regulator",
+
+    "Where is the cylinder located?": "Cylinder Location",
+
+    "Is kitchen well ventilated?": "Ventilation",
+
+    "Do you use ISI marked hose?": "ISI Hose",
+
+    "Would you like a free inspection?": "Free Inspection"
+
+     }, inplace=True)
 
     # ------------------------------------
     # Analyze
